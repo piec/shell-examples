@@ -24,7 +24,7 @@ echo "
 ###############################################
 "
 
-trap '(read -p "[$BASH_SOURCE:$LINENO] $BASH_COMMAND ") ' DEBUG
+trap 'read -p "[$BASH_SOURCE:$LINENO] $BASH_COMMAND "' DEBUG
 
 echo "it makes us press enter to confirm before every line of code"
 
